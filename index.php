@@ -34,7 +34,7 @@ function news ($id, $news){
 // если параметр не был передан - выводить 404 ошибку
 // http://php.net/manual/ru/function.header.php
 if($_GET){
-    if(array_key_exists('id', $_GET) && is_numeric($_POST['id'])){
+    if(array_key_exists('id', $_GET) && is_numeric($_GET['id'])){
     news($_GET['id'], $news);
     }
  else {
